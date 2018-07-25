@@ -1,0 +1,54 @@
+{
+    "name": "simple-line-wrapper",
+    "displayName": "simple-line-wrapper",
+    "description": "Wraps each selected line with a text, that can be specified",
+    "version": "0.0.1",
+    "publisher": "cureno",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.wrapLines",
+        "onCommand:extension.stripLines",
+        "onCommand:extension.removeEmptyLines",
+        "onCommand:extension.insertAfterEachLine"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.wrapLines",
+                "title": "wrap lines with"
+            },
+            {
+                "command": "extension.stripLines",
+                "title": "strip lines from"
+            },
+            {
+                "command": "extension.removeEmptyLines",
+                "title": "remove empty lines"
+            },
+            {
+                "command": "extension.insertAfterEachLine",
+                "title": "insert after each line"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
