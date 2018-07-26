@@ -1,65 +1,49 @@
-# simple-line-wrapper README
+# editing-funcs-for-vscode README
 
-This is the README for your extension "simple-line-wrapper". After writing up a brief description, we recommend including the following sections.
 
-## Features
+## Installation
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* To develop:
+  1. `npm install`
+  2. then run in debug mode
 
-For example if there is an image subfolder under your extension project workspace:
+* To use:
+  1. copy to your extensions folder
+  2. `npm install`
+  
+* To use and develop at the same time:
+  1. copy to your extensions folder
+  2. `npm install` 
+  3. `npm run watch`
+  4. open the folder in vscode
+  5. modify `src/extension.ts` or `src/**/*` in general
 
-\!\[feature X\]\(images/feature-x.png\)
+## User Guide
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. Select some text, for example something like:  
+  
+ADD_USER  
+DELETE_USER  
+UPDATE_USER  
+REPLACE_USER  
+UPDATE_USER  
+REPLACE_USER  
+  
+2. Open the command palette (`Ctrl+P` on Windows/Linux by default)
+3. Type `wrap lines with` and press `Enter`
+4. Type `"` and press `Enter`
+5. Voilá, you get:
 
-## Requirements
+"ADD_USER"  
+"DELETE_USER"  
+"UPDATE_USER"  
+"REPLACE_USER"  
+"UPDATE_USER"  
+"REPLACE_USER"  
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Currently implemented, more to come
 
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+`wrap lines with`  
+`strip lines`  
+`remove empty lines`  
+`insert after each line`  

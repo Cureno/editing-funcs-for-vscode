@@ -1,8 +1,8 @@
 {
-    "name": "simple-line-wrapper",
-    "displayName": "simple-line-wrapper",
+    "name": "editing-funcs-for-vscode",
+    "displayName": "editing-funcs-for-vscode",
     "description": "Wraps each selected line with a text, that can be specified",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "cureno",
     "engines": {
         "vscode": "^1.25.0"
